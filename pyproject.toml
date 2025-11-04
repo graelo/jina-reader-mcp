@@ -1,0 +1,15 @@
+[project]
+name = "jina-reader-mcp"
+version = "0.1.0"
+description = "MCP server for self-hosted Jina Reader API"
+authors = [{ name = "graelo", email = "graelo@graelo.cc" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["fastmcp>=2.0.0", "httpx>=0.28.1"]
+
+[project.scripts]
+jina-reader-mcp = "jina_reader_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
